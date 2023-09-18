@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Calculator App</title>
+  </head>
+  <body class="min-h-screen overflow-hidden bg-neutral-off-white font-poppins">
+    <main
+      class="sm:rounded-br-20xl mx-4 mt-22 flex max-w-[650px] flex-col items-center rounded-3xl rounded-br-12xl bg-white px-6 py-[49px] sm:mx-auto sm:mt-[120px] sm:p-[42px]"
+    >
+      <div
+        class="flex w-full items-start justify-center gap-x-4 sm:justify-start sm:gap-x-6"
+      >
+        <div class="flex flex-col gap-y-1">
+          <label
+            class="mb-[1px] w-fit text-xs font-semibold uppercase tracking-[.25em] text-neutral-smoke-grey sm:mb-[2px] sm:text-[11px]"
+            for="day"
+            >day</label
+          >
+          <input
+            placeholder="DD"
+            class="h-[54px] w-22 rounded-lg border border-neutral-light-grey pl-4 text-xl font-bold placeholder-neutral-smoke-grey caret-primary-purple outline-none focus-within:border-primary-purple sm:w-[125px] sm:text-2xl"
+            autocomplete="off"
+            maxlength="2"
+            type="text"
+            id="day"
+          />
+          <div
+            id="day-error"
+            class="hidden text-xs font-medium italic text-primary-light-red"
+          ></div>
+        </div>
+        <div class="flex flex-col gap-y-1">
+          <label
+            class="mb-[1px] w-fit text-xs font-semibold uppercase tracking-[.25em] text-neutral-smoke-grey sm:mb-[2px] sm:text-[11px]"
+            for="month"
+            >month</label
+          >
+          <input
+            placeholder="MM"
+            class="h-[54px] w-22 rounded-lg border border-neutral-light-grey pl-4 text-xl font-bold placeholder-neutral-smoke-grey caret-primary-purple outline-none focus-within:border-primary-purple sm:w-[125px] sm:text-2xl"
+            autocomplete="off"
+            maxlength="2"
+            type="text"
+            id="month"
+          />
+          <div
+            id="month-error"
+            class="hidden text-xs font-medium italic text-primary-light-red"
+          ></div>
+        </div>
+        <div class="flex flex-col gap-y-1">
+          <label
+            class="mb-[1px] w-fit text-xs font-semibold uppercase tracking-[.25em] text-neutral-smoke-grey sm:mb-[2px] sm:text-[11px]"
+            for="year"
+            >year</label
+          >
+          <input
+            placeholder="YYYY"
+            class="h-[54px] w-22 rounded-lg border border-neutral-light-grey pl-4 text-xl font-bold placeholder-neutral-smoke-grey caret-primary-purple outline-none focus-within:border-primary-purple sm:w-[125px] sm:text-2xl"
+            autocomplete="off"
+            maxlength="4"
+            type="text"
+            id="year"
+          />
+          <div
+            id="year-error"
+            class="hidden text-xs font-medium italic text-primary-light-red"
+          ></div>
+        </div>
+      </div>
+      <div
+        class="relative mb-[65px] mt-[62px] h-0.5 w-full bg-neutral-light-grey sm:mb-[38px] sm:mt-[38px] sm:h-[1px]"
+      >
+        <div
+          id="submit"
+          class="duration-400 absolute -top-[30px] right-1/2 w-fit translate-x-1/2 cursor-pointer rounded-full bg-primary-purple p-5 transition hover:bg-neutral-off-black sm:-top-9 sm:right-0 sm:translate-x-0 sm:p-5"
+        >
+          <img
+            src="./assets/images/icon-arrow.svg"
+            alt="arrow"
+            class="h-6 w-6 sm:h-9 sm:w-9"
+          />
+        </div>
+      </div>
+      <div
+        class="flex w-full flex-col text-[42pt] font-extrabold italic leading-[62px] sm:text-[60pt] sm:leading-[88px]"
+      >
+        <h2>
+          <span
+            id="day-result"
+            class="mr-2.5 tracking-tight text-primary-purple sm:mr-0 sm:tracking-[0.15em]"
+            >--</span
+          ><span class="tracking-tight">years</span>
+        </h2>
+        <h2>
+          <span
+            id="month-result"
+            class="mr-2.5 tracking-tight text-primary-purple sm:mr-0 sm:tracking-[0.15em]"
+            >--</span
+          ><span class="tracking-tight">months</span>
+        </h2>
+        <h2>
+          <span
+            id="year-result"
+            class="mr-2.5 tracking-tight text-primary-purple sm:mr-0 sm:tracking-[0.15em]"
+            >--</span
+          ><span class="tracking-tight">days</span>
+        </h2>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
