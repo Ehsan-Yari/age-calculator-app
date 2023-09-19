@@ -41,7 +41,12 @@ submitBtn.addEventListener("click", () => {
     yearInput.classList.remove("border-neutral-light-grey");
     yearInput.style.borderColor = "hsl(0, 100%, 67%)";
   }
-  if (!birthDate.isValid()) {
+  if (
+    !birthDate.isValid() &&
+    day.length !== 0 &&
+    month.length !== 0 &&
+    year.length !== 0
+  ) {
     dayError.innerHTML = "Must be a valid date";
     dayError.classList.remove("hidden");
     dayInput.classList.remove("border-neutral-light-grey");
@@ -52,7 +57,7 @@ submitBtn.addEventListener("click", () => {
     yearInput.style.borderColor = "hsl(0, 100%, 67%)";
   } else if (
     birthDate.isValid() &&
-    year.length == 4 &&
+    year.length === 4 &&
     month.length !== 0 &&
     day.length !== 0
   ) {
