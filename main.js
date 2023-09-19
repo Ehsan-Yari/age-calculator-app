@@ -49,6 +49,8 @@ submitBtn.addEventListener("click", () => {
   ) {
     dayError.innerHTML = "Must be a valid date";
     dayError.classList.remove("hidden");
+    yearError.classList.add("hidden");
+    monthError.classList.add("hidden");
     dayInput.classList.remove("border-neutral-light-grey");
     dayInput.style.borderColor = "hsl(0, 100%, 67%)";
     monthInput.classList.remove("border-neutral-light-grey");
