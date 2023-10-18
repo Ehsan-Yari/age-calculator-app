@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [frontendmentor](https://www.frontendmentor.io/solutions/age-calculator-app-5o0aaKcFts)
-- Live Site URL: [netlify](https://venerable-bubblegum-31e6b0.netlify.app/)
+- Live Site URL: [netlify](https://ehsan-yari-age-calculator.netlify.app/)
 
 ### Built with
 
